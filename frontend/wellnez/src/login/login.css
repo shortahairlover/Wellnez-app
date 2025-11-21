@@ -1,0 +1,119 @@
+/* src/login/login.css */
+
+/* Gaya untuk seluruh halaman (Latar Belakang Biru) */
+.login-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* Gunakan warna biru yang mirip dengan gambar Anda */
+  background-color: #0833C1; 
+  min-height: 100vh;
+  padding-top: 50px; /* Memberi ruang di atas */
+  box-sizing: border-box;
+}
+
+/* Header (Logo dan Nama App) */
+.app-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 5px; /* Jarak dari form di bawah */
+}
+
+.app-logo-image {
+  height: 170px; /* Ukuran logo */
+}
+
+.app-name {
+  color: white; /* Warna teks nama aplikasi */
+  font-size: 1.8em;
+  font-weight: 600;
+  margin-top: -10px; /* Ditarik ke atas agar dekat dengan logo */
+}
+
+/* Container Form Login */
+.login-container {
+  width: 400px; /* Lebar kotak login */
+  max-width: 90%;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Bayangan untuk kotak form */
+  text-align: center;
+  
+  /* Gradien Hijau-Kuning untuk kotak login */
+  background: linear-gradient(180deg, #7ED957, #7ed957);
+}
+
+.login-title {
+  color: #0E62D8;
+  font-size: 2em;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+/* Tata Letak Form */
+.login-form {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: 500;
+  color: #0E62D8;
+  margin-bottom: 5px;
+}
+
+.form-input {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  box-sizing: border-box; /* Padding tidak menambah lebar */
+  font-size: 1em;
+  /* Efek sedikit bayangan ke dalam (inset) */
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1); 
+}
+
+/* Tombol Login */
+.login-button {
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1em;
+  font-weight: bold;
+  cursor: pointer;
+  /* Warna tombol (Hijau lebih terang) */
+  background-color: #8BF65D; 
+  color: #0E62D8;
+  margin-top: 10px;
+  transition: background-color 0.3s;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 1, 0.1);
+  text-decoration: none;
+}
+
+.login-button:hover {
+  background-color: #7ED957; /* Sedikit lebih gelap saat dihover */
+}
+
+/* Link Register */
+.register-link-text {
+  font-size: 0.9em;
+  color: white; /* Warna teks "Don't Have an Account?" */
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+.register-link {
+  color: #0E62D8; /* Warna link (biru muda) */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.register-link:hover {
+  text-decoration: underline;
+}

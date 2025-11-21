@@ -1,0 +1,62 @@
+/* Ganti .App menjadi .landing-page */
+.landing-page {
+  text-align: center;
+  background-color: #0833C1; /* Warna biru latar belakang */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+/* Ganti .App-header menjadi .page-header */
+.page-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.welcome-text {
+  font-size: 2em;
+  color: #00B8A9;
+  margin-bottom: 5px;
+  letter-spacing: 2px;
+  text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  font-weight: bold;
+}
+
+/* Ganti .App-logo menjadi .logo-image */
+.logo-image {
+  height: 200px;
+  pointer-events: none;
+  
+}
+
+.tagline {
+margin-top: -1px;
+  font-size: 1.2em;
+  color: #7ED957;
+  margin-bottom: 30px;
+  font-weight: 500;
+}
+
+.get-started-button {
+  background-color: #90EE90;
+  color: #333;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 15px;
+  font-size: 1.1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.get-started-button:hover {
+  background-color: #76DA76;
+}
