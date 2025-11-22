@@ -7,8 +7,10 @@ import { Routes, Route } from 'react-router-dom';
 
 // Import komponen-komponen yang akan dirouting
 import LandingPage from './components/landingpage/landingpage';
+import Navbar from './components/navbar/navbar';
 import Login from './login/login'; 
 import Register from './register/register';
+import Mainpage from './mainpage/mainpage';
 // Asumsi path login/login.js benar
 
 function App() {
@@ -25,6 +27,10 @@ function App() {
 
         {/* Rute 2: Halaman Login */}
         <Route path="/register" element={<Register />} />
+
+        <Route path="/navbar" element={<Navbar />} />
+
+        <Route path="/mainpage" element={<Mainpage />} />
         
         {/* Anda bisa menambahkan rute lain di sini, misalnya /register */}
         {/* <Route path="/register" element={<Register />} /> */}
