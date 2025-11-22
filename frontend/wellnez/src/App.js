@@ -11,6 +11,9 @@ import Navbar from './components/navbar/navbar';
 import Login from './login/login'; 
 import Register from './register/register';
 import Mainpage from './mainpage/mainpage';
+import Schedule from './schedule/schedule';
+import AddSchedule from './schedule/addSchedule/addSchedule';
+import EditSchedule from './schedule/editSchedule/editSchedule';
 // Asumsi path login/login.js benar
 
 function App() {
@@ -31,6 +34,12 @@ function App() {
         <Route path="/navbar" element={<Navbar />} />
 
         <Route path="/mainpage" element={<Mainpage />} />
+
+        <Route path="/schedule" element={<Schedule />} />
+
+        <Route path="/addSchedule" element={<AddSchedule />} />
+
+        <Route path="/editSchedule" element={<EditSchedule />} />
         
         {/* Anda bisa menambahkan rute lain di sini, misalnya /register */}
         {/* <Route path="/register" element={<Register />} /> */}

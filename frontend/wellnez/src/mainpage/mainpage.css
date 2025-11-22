@@ -1,0 +1,109 @@
+/* Container Utama Mainpage */
+.mainpage-container {
+  /* Hapus min-height: calc(100vh - 80px); jika Anda menggunakan mainpage-wrapper */
+  background-color: #7AACFF; 
+  padding: 40px 60px;
+  display: flex;
+  justify-content: center;
+  /* Atur agar konten mengisi sisa layar di bawah navbar */
+  min-height: calc(100vh - 80px); /* Asumsi tinggi Navbar 80px */
+}
+
+/* Konten di dalamnya (untuk menampung kiri dan kanan) */
+.mainpage-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; /* Sejajarkan konten dari atas */
+  width: 100%;
+  max-width: 1200px; /* Batasi lebar untuk tampilan desktop */
+}
+
+/* === Bagian Kiri (Header dan Tombol) === */
+.mainpage-left {
+  flex: 1;
+  padding-right: 50px;
+}
+
+.mainpage-title {
+  font-size: 48px;
+  color: #ffffff; /* Warna biru untuk judul "Wellnez" */
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.mainpage-tagline {
+  font-size: 28px;
+  color: #ffffff;
+  margin-bottom: 60px;
+}
+
+/* Container untuk 3 tombol fitur */
+.mainpage-features {
+  display: flex;
+  gap: 40px; /* Jarak antar card */
+}
+
+/* Gaya untuk setiap tombol/card Link */
+.feature-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  text-decoration: none; /* Hapus underline dari Link */
+  color: #ffffff; /* Warna teks biru untuk Link */
+  max-width: 150px;
+  transition: transform 0.3s;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px); /* Efek hover naik sedikit */
+}
+
+.feature-text {
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 15px;
+}
+
+/* Styling untuk Ikon Placeholder */
+.mainpage-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  font-size: 36px;
+  color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Warna spesifik untuk setiap ikon sesuai gambar */
+.article-icon {
+  background-color: #ffffff; /* Biru gelap untuk Artikel */
+}
+.schedule-icon {
+  background-color: #ffffff; /* Biru gelap untuk Jadwal */
+}
+.manage-icon {
+  background-color: #ffffff; /* Ungu untuk Manage Food */
+}
+
+
+/* === Bagian Kanan (Gambar Dokter) === */
+.mainpage-right {
+  flex: 0 0 450px; /* Lebar tetap untuk gambar */
+  height: 100%; 
+  position: relative;
+}   
+
+.doctor-image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  /* Atur posisi gambar dokter agar sesuai dengan layout yang ada di gambar */
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform: translateY(10px); /* Atur agar gambar sedikit turun atau naik sesuai kebutuhan visual */
+}
