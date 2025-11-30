@@ -1,0 +1,111 @@
+/* Styling untuk Overlay/Backdrop */
+.add-schedule-modal-overlay {
+    /* Menutupi seluruh viewport */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    
+    /* Warna latar belakang semi-transparan (abu-abu gelap) */
+    background-color: rgba(0, 0, 0, 0.4); 
+    
+    /* Centering konten modal di tengah layar */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    /* Pastikan modal berada di atas konten lain */
+    z-index: 1000;
+}
+
+/* Styling untuk Konten Modal (kotak putih) */
+.add-schedule-modal-content {
+    background-color: white;
+    padding: 30px 40px;
+    border-radius: 8px;
+    
+    /* Lebar sesuai gambar */
+    width: 90%; 
+    max-width: 450px; 
+    
+    /* Efek bayangan */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    
+    /* Teks dan layout */
+    text-align: center;
+}
+
+/* Styling untuk Judul "Add Schedule" */
+.modal-title {
+    font-size: 1.5em;
+    font-weight: 500;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+/* Grouping input */
+.modal-form-group {
+    margin-bottom: 20px;
+}
+
+/* Styling untuk Semua Input */
+.modal-input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+    box-sizing: border-box; /* Penting agar padding tidak menambah lebar total */
+}
+
+/* Styling untuk Input Date/Time (jika menggunakan datetime-local) */
+.date-time-input {
+    /* Opsional: Ubah tampilan untuk lebih mirip dengan placeholder */
+    color: #555;
+}
+
+/* Placeholder Styling untuk input */
+.modal-input::placeholder {
+    color: #aaa;
+}
+
+/* Container untuk menempatkan tombol OK dan Cancel bersebelahan */
+.button-container {
+    display: flex;
+    justify-content: flex-end; /* Posisikan tombol ke kanan */
+    gap: 15px; /* Jarak antara tombol */
+    margin-top: 25px; /* Jarak dari input di atas */
+}
+
+/* Styling dasar untuk tombol */
+.modal-ok-button,
+.modal-cancel-button {
+    color: white;
+    padding: 10px 20px; /* Padding disesuaikan agar tombol tidak terlalu lebar */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    flex-grow: 0; /* Jangan biarkan tombol melebar */
+}
+
+/* Styling untuk Tombol OK (hijau) */
+.modal-ok-button {
+    background-color: #4CAF50; /* Warna hijau seperti di gambar */
+}
+
+.modal-ok-button:hover {
+    background-color: #45a049;
+}
+
+/* Styling untuk Tombol Cancel (merah) */
+.modal-cancel-button {
+    background-color: #f44336; /* Warna merah */
+}
+
+.modal-cancel-button:hover {
+    background-color: #da190b;
+}

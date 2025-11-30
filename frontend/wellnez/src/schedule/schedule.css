@@ -1,0 +1,106 @@
+/* Styling untuk komponen Schedule */
+
+.schedule-wrapper {
+  position: sticky; 
+  background-color: #ffffff;
+}
+
+.schedule-content {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: #ffffff; /* Latar belakang putih untuk konten utama */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Header dengan judul dan tombol Add Schedule */
+.schedule-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.schedule-header h2 {
+  color: #00897b; /* Warna hijau untuk judul */
+  font-size: 1.8rem;
+}
+
+.btn-add-schedule {
+  background-color: #4caf50; /* Warna hijau untuk tombol Add */
+  color: white;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none; /* Untuk Link */
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.btn-add-schedule:hover {
+  background-color: #43a047;
+}
+
+/* Styling untuk daftar jadwal */
+.schedule-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Jarak antara setiap kartu jadwal */
+}
+
+/* Styling untuk setiap kartu jadwal (ScheduleCard) */
+.schedule-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  border: 1px solid #7AACFF;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.schedule-details h3 {
+  margin: 0 0 5px 0;
+  color: #333;
+  font-size: 1.2rem;
+}
+
+.schedule-details p {
+  margin: 2px 0;
+  color: #555;
+  font-size: 0.9rem;
+}
+
+.schedule-time, .schedule-type {
+    font-weight: 500;
+}
+
+/* Tombol Aksi (Edit, Delete) */
+.schedule-actions button {
+  padding: 5px 10px;
+  margin-left: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: opacity 0.3s ease;
+  
+}
+
+.schedule-actions button:hover {
+  opacity: 0.8;
+}
+
+.btn-edit {
+  background-color: #4caf50; /* Hijau muda */
+  color: white;
+}
+
+.btn-delete {
+  background-color: #f20505; /* Merah muda */
+  color: white;
+}
